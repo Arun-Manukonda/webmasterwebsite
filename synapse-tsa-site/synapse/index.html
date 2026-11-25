@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Synapse AI Learning Portal</title>
+  <meta name="description" content="An interactive, gamified portal that teaches high school students how AI works, how to use it well, and how to use it ethically.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="bm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34e1c4"/><stop offset="1" stop-color="#a194ff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#bm)"/><g stroke="#0a0f1f" stroke-width="2" stroke-linecap="round"><path d="M9 11l7 5M9 21l7-5M16 16h7"/></g><g fill="#0a0f1f"><circle cx="9" cy="11" r="2.6"/><circle cx="9" cy="21" r="2.6"/><circle cx="16" cy="16" r="2.6"/><circle cx="23" cy="16" r="2.6"/></g></svg><span>Synapse</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars"></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="fundamentals.html">Fundamentals</a>
+        <a href="tools.html">Tools &amp; Techniques</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="references.html">References</a>
+      </nav>
+      <a class="xp-pill" href="dashboard.html"><span class="xp-level">Lv 1</span><span class="xp-bar"><span class="xp-fill"></span></span><span class="xp-num">0 XP</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">AI learning portal · Grades 9&ndash;12</p>
+            <h1>Understand AI. <span>Use it well.</span> Level up.</h1>
+            <p class="lead">Synapse takes the mystery out of artificial intelligence. Learn how AI actually works, practice using it as a smart study partner, and build the judgment to use it honestly. Earn XP and badges as you go.</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="fundamentals.html" data-continue>Start learning</a>
+              <a class="btn btn-ghost" href="dashboard.html">View my dashboard</a>
+            </div>
+          </div>
+          <div class="hero-art"><svg viewBox="0 0 440 380" role="img" aria-labelledby="hero-t"><title id="hero-t">Illustration of a glowing neural network with signals flowing between nodes</title>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#a194ff" stop-opacity=".45"/><stop offset="1" stop-color="#a194ff" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#34e1c4"/><stop offset="1" stop-color="#a194ff"/></linearGradient>
+  </defs>
+  <circle cx="220" cy="190" r="180" fill="url(#glow)"/>
+  <g stroke="url(#ln)" stroke-width="2" opacity=".55" fill="none">
+    <path d="M70 90 L200 70 M70 90 L200 190 M70 90 L200 310 M70 190 L200 70 M70 190 L200 190 M70 190 L200 310 M70 290 L200 70 M70 290 L200 190 M70 290 L200 310"/>
+    <path d="M200 70 L350 130 M200 70 L350 250 M200 190 L350 130 M200 190 L350 250 M200 310 L350 130 M200 310 L350 250"/>
+  </g>
+  <g stroke="#ffbd59" stroke-width="3" fill="none" stroke-linecap="round">
+    <path class="flow" d="M70 190 L200 70 L350 130"/>
+    <path class="flow" d="M70 290 L200 190 L350 250"/>
+  </g>
+  <g fill="#141c38" stroke-width="3">
+    <circle cx="70" cy="90" r="18" stroke="#34e1c4"/><circle cx="70" cy="190" r="18" stroke="#34e1c4"/><circle cx="70" cy="290" r="18" stroke="#34e1c4"/>
+    <circle cx="200" cy="70" r="22" stroke="#a194ff"/><circle cx="200" cy="190" r="22" stroke="#a194ff"/><circle cx="200" cy="310" r="22" stroke="#a194ff"/>
+    <circle cx="350" cy="130" r="26" stroke="#ffbd59"/><circle cx="350" cy="250" r="26" stroke="#ffbd59"/>
+  </g>
+  <g>
+    <circle class="pulse" cx="70" cy="190" r="7" fill="#34e1c4"/><circle class="pulse d1" cx="200" cy="70" r="8" fill="#a194ff"/>
+    <circle class="pulse d2" cx="200" cy="190" r="8" fill="#a194ff"/><circle class="pulse d3" cx="350" cy="130" r="9" fill="#ffbd59"/>
+    <circle class="pulse d1" cx="350" cy="250" r="9" fill="#ffbd59"/><circle class="pulse d2" cx="70" cy="290" r="7" fill="#34e1c4"/>
+  </g>
+  <g font-family="Space Grotesk, sans-serif" font-size="13" fill="#a9b4d6" text-anchor="middle">
+    <text x="70" y="345">Learn</text><text x="200" y="365">Practice</text><text x="350" y="300">Level up</text>
+  </g>
+</svg></div>
+        </div>
+        <div class="stats-strip">
+          <div class="stat"><b>3</b><span>learning modules</span></div>
+          <div class="stat"><b>12</b><span>bite-size lessons</span></div>
+          <div class="stat"><b>4</b><span>hands-on activities</span></div>
+          <div class="stat"><b>7</b><span>badges to earn</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="modules-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Your learning path</p>
+          <h2 id="modules-title">Three modules, one goal: AI confidence</h2>
+          <p class="muted">Work through the modules in order or jump to what you need. Each one has four short lessons, an interactive activity, and a quiz.</p>
+        </div>
+        <div class="module-cards">
+          <a class="module-card mod-fundamentals" href="fundamentals.html">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l3.5 3.5M7 17l3.5-3.5M13.5 10.5 17 7M13.5 13.5 17 17"/></svg></div>
+          <p class="eyebrow" style="margin:0">Module 1</p>
+          <h3>AI Fundamentals</h3>
+          <p>What AI is, how machines learn from data, and why chatbots sometimes get things wrong.</p>
+          <ul><li>AI vs. machine learning</li><li>How neural networks learn</li><li>Inside a language model</li></ul>
+          <div class="meter-row"><div class="meter"><span data-module-fill="fundamentals"></span></div><span data-module-text="fundamentals">0 of 6 steps</span></div>
+          <span class="go">Open module &rarr;</span>
+        </a>
+          <a class="module-card mod-tools" href="tools.html">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 15 9M14 3v3M19.5 5.5 17.5 7.5M21 10h-3M12.5 4.5l1 1"/></svg></div>
+          <p class="eyebrow" style="margin:0">Module 2</p>
+          <h3>Tools &amp; Techniques</h3>
+          <p>The AI tools students use, how to write prompts that work, and how to fact-check what AI tells you.</p>
+          <ul><li>The student AI toolbox</li><li>The R-T-C-F prompt formula</li><li>Verify before you trust</li></ul>
+          <div class="meter-row"><div class="meter"><span data-module-fill="tools"></span></div><span data-module-text="tools">0 of 6 steps</span></div>
+          <span class="go">Open module &rarr;</span>
+        </a>
+          <a class="module-card mod-ethics" href="ethics.html">
+          <div class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <p class="eyebrow" style="margin:0">Module 3</p>
+          <h3>Ethical AI Use</h3>
+          <p>Academic integrity, bias, privacy, and what it means to be a responsible AI user at school and beyond.</p>
+          <ul><li>Green, yellow, and red uses</li><li>Bias and fairness</li><li>Disclosing and citing AI</li></ul>
+          <div class="meter-row"><div class="meter"><span data-module-fill="ethics"></span></div><span data-module-text="ethics">0 of 6 steps</span></div>
+          <span class="go">Open module &rarr;</span>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Learn it, try it, prove it</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><h3>Read</h3><p>Short lessons with diagrams explain one big idea at a time. Mark each lesson complete for <strong>+20 XP</strong>.</p></div>
+          <div class="step"><h3>Practice</h3><p>Interactive activities let you sort, build, and judge real scenarios. Finish one for <strong>+50 XP</strong>.</p></div>
+          <div class="step"><h3>Prove</h3><p>Each module ends with a five-question quiz. Pass with 4/5 to complete the module.</p></div>
+          <div class="step"><h3>Level up</h3><p>Track everything on your dashboard, climb five levels, and unlock all seven badges.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-labelledby="levels-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Levels</p>
+          <h2 id="levels-title">From Curious Beginner to AI Ambassador</h2>
+          <p class="muted">Your current level is highlighted. Everything you complete moves you up the ladder.</p>
+        </div>
+        <div class="ladder">
+          <div class="rung" data-level-rung="0"><span class="lv">LV 1</span><b>Curious Beginner</b><small>0 XP</small></div>
+          <div class="rung" data-level-rung="1"><span class="lv">LV 2</span><b>Data Explorer</b><small>100 XP</small></div>
+          <div class="rung" data-level-rung="2"><span class="lv">LV 3</span><b>Model Builder</b><small>250 XP</small></div>
+          <div class="rung" data-level-rung="3"><span class="lv">LV 4</span><b>Prompt Engineer</b><small>400 XP</small></div>
+          <div class="rung" data-level-rung="4"><span class="lv">LV 5</span><b>AI Ambassador</b><small>550 XP</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Synapse: an AI learning portal for grades 9&ndash;12. TSA Webmaster entry, Chapter&nbsp;ID&nbsp;<strong>[0000-0]</strong>, <span id="year">2027</span>.</p>
+      <p>Your progress is saved only in this browser. <a href="references.html">Sources &amp; credits</a></p>
+    </div>
+  </footer>
+  <script src="js/progress.js"></script>
+</body>
+</html>
