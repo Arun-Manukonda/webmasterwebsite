@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Fundamentals | Synapse AI Learning Portal</title>
+  <meta name="description" content="Learn what artificial intelligence is, how machine learning works, and how language models generate text.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="mod-fundamentals" data-module="fundamentals">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="bm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34e1c4"/><stop offset="1" stop-color="#a194ff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#bm)"/><g stroke="#0a0f1f" stroke-width="2" stroke-linecap="round"><path d="M9 11l7 5M9 21l7-5M16 16h7"/></g><g fill="#0a0f1f"><circle cx="9" cy="11" r="2.6"/><circle cx="9" cy="21" r="2.6"/><circle cx="16" cy="16" r="2.6"/><circle cx="23" cy="16" r="2.6"/></g></svg><span>Synapse</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Menu</span><span class="bars"></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="fundamentals.html" aria-current="page">Fundamentals</a>
+        <a href="tools.html">Tools &amp; Techniques</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="references.html">References</a>
+      </nav>
+      <a class="xp-pill" href="dashboard.html"><span class="xp-level">Lv 1</span><span class="xp-bar"><span class="xp-fill"></span></span><span class="xp-num">0 XP</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="module-hero">
+      <div class="wrap">
+        <p class="eyebrow">Module 1 · about 25 minutes</p>
+        <h1>AI Fundamentals</h1>
+        <p class="lead">Before you can use AI well, you need to know what's happening under the hood. This module explains what AI is, how machines learn from data, and why chatbots sometimes get things wrong.</p>
+        <div class="meter-row"><div class="meter"><span data-module-fill="fundamentals"></span></div><span data-module-text="fundamentals">0 of 6 steps</span></div>
+      </div>
+    </section>
+    <div class="wrap module-layout">
+      <aside class="lesson-nav" aria-label="Module contents"><p>In this module</p><ol><li><a href="#lesson-1" data-step="lesson-0"><span class="dot"></span>What is AI?</a></li><li><a href="#lesson-2" data-step="lesson-1"><span class="dot"></span>How machines learn</a></li><li><a href="#lesson-3" data-step="lesson-2"><span class="dot"></span>Neural networks &amp; language models</a></li><li><a href="#lesson-4" data-step="lesson-3"><span class="dot"></span>What AI can't do (yet)</a></li><li><a href="#activity" data-step="activity"><span class="dot"></span>Activity</a></li><li><a href="#quiz" data-step="quiz"><span class="dot"></span>Module quiz</a></li></ol></aside>
+      <div class="module-content">
+        <article class="lesson" id="lesson-1" aria-labelledby="lt-1">
+          <span class="lesson-num">Lesson 1</span>
+          <h2 id="lt-1">What is AI?</h2>
+          <p><strong>Artificial intelligence (AI)</strong> is the field of computer science focused on building systems that can do tasks that usually take human intelligence: recognizing images, understanding language, making predictions, and making decisions.</p>
+          <p>You probably used AI before breakfast. Your phone's face unlock, the spam filter in your email, autocorrect, map apps that predict traffic, and the "recommended for you" row on a streaming service are all powered by AI.</p>
+<figure class="figure"><svg viewBox="0 0 520 300" role="img" aria-labelledby="fn-t"><title id="fn-t">Nested diagram: generative AI is inside deep learning, which is inside machine learning, which is inside artificial intelligence</title>
+  <g stroke-width="2" font-family="Space Grotesk, sans-serif" text-anchor="middle">
+    <ellipse cx="260" cy="150" rx="250" ry="140" fill="rgba(161,148,255,.08)" stroke="#a194ff"/>
+    <ellipse cx="285" cy="168" rx="190" ry="108" fill="rgba(52,225,196,.08)" stroke="#34e1c4"/>
+    <ellipse cx="305" cy="186" rx="128" ry="76" fill="rgba(255,189,89,.08)" stroke="#ffbd59"/>
+    <ellipse cx="320" cy="204" rx="70" ry="42" fill="rgba(255,122,154,.16)" stroke="#ff7a9a"/>
+    <text x="260" y="40" fill="#a194ff" font-size="17" stroke="none">Artificial Intelligence</text>
+    <text x="285" y="88" fill="#34e1c4" font-size="16" stroke="none">Machine Learning</text>
+    <text x="305" y="140" fill="#ffbd59" font-size="15" stroke="none">Deep Learning</text>
+    <text x="320" y="209" fill="#ff7a9a" font-size="14" stroke="none">Generative AI</text>
+  </g></svg>
+  <figcaption>Each field is a subset of the one around it.</figcaption></figure>
+          <div class="grid-2">
+            <div class="mini"><h4>Artificial intelligence</h4><p>The whole field: any technique that lets computers act "smart."</p></div>
+            <div class="mini"><h4>Machine learning (ML)</h4><p>AI that learns patterns from data instead of following only hand-written rules.</p></div>
+            <div class="mini"><h4>Deep learning</h4><p>ML that uses large neural networks with many layers. It powers image and speech recognition.</p></div>
+            <div class="mini"><h4>Generative AI</h4><p>Deep learning models that create new content (text, images, audio, or code) such as chatbots and image generators.</p></div>
+          </div>
+          <div class="callout"><span class="callout-title">Big idea</span><p>Today's AI can be impressive at specific skills and still fail at things a child finds easy. Experts debate if and when we will build "artificial general intelligence" that matches people at nearly everything.</p></div>
+          <div class="lesson-foot"><button type="button" class="btn btn-primary lesson-done" data-lesson="0">Mark lesson complete · +20 XP</button></div>
+        </article><article class="lesson" id="lesson-2" aria-labelledby="lt-2">
+          <span class="lesson-num">Lesson 2</span>
+          <h2 id="lt-2">How machines learn</h2>
+          <p>In traditional programming, a person writes the rules: <em>"if the email contains these words, mark it as spam."</em> In <strong>machine learning</strong>, we flip that around. We give the computer lots of examples and let it figure out the rules itself.</p>
+<figure class="figure"><svg viewBox="0 0 680 150" role="img" aria-labelledby="fp-t"><title id="fp-t">Machine learning pipeline: data goes into training, which produces a model, which makes predictions on new inputs</title>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8591b5"/></marker></defs>
+  <g font-family="Inter, sans-serif" text-anchor="middle">
+    <rect x="5" y="30" width="140" height="80" rx="14" fill="#1b2547" stroke="#34e1c4" stroke-width="2"/><text x="75" y="66" fill="#eaf0ff" font-size="17" font-weight="700">Data</text><text x="75" y="88" fill="#a9b4d6" font-size="12">labeled examples</text>
+    <rect x="182" y="30" width="140" height="80" rx="14" fill="#1b2547" stroke="#a194ff" stroke-width="2"/><text x="252" y="66" fill="#eaf0ff" font-size="17" font-weight="700">Training</text><text x="252" y="88" fill="#a9b4d6" font-size="12">find the patterns</text>
+    <rect x="359" y="30" width="140" height="80" rx="14" fill="#1b2547" stroke="#ffbd59" stroke-width="2"/><text x="429" y="66" fill="#eaf0ff" font-size="17" font-weight="700">Model</text><text x="429" y="88" fill="#a9b4d6" font-size="12">learned "rules"</text>
+    <rect x="536" y="30" width="140" height="80" rx="14" fill="#1b2547" stroke="#ff7a9a" stroke-width="2"/><text x="606" y="66" fill="#eaf0ff" font-size="17" font-weight="700">Prediction</text><text x="606" y="88" fill="#a9b4d6" font-size="12">on brand-new input</text>
+    <g stroke="#8591b5" stroke-width="2" marker-end="url(#ar)"><path d="M147 70h31"/><path d="M324 70h31"/><path d="M501 70h31"/></g>
+    <text x="340" y="140" fill="#8591b5" font-size="12">Testing on data the model has never seen tells us how well it really learned.</text>
+  </g></svg>
+  <figcaption>The basic machine learning workflow.</figcaption></figure>
+          <p>A few key terms:</p>
+          <ul>
+            <li><strong>Training data:</strong> the examples the model learns from.</li>
+            <li><strong>Features:</strong> the details the model pays attention to (like the words in an email).</li>
+            <li><strong>Labels:</strong> the correct answers attached to examples (like "spam" or "not spam").</li>
+            <li><strong>Model:</strong> the result of training: a set of learned patterns that can make predictions.</li>
+          </ul>
+          <h3>Three ways machines learn</h3>
+          <div class="grid-3">
+            <div class="mini"><h4>Supervised</h4><p>Learns from labeled examples. <em>"Here are 10,000 photos labeled cat or dog."</em></p></div>
+            <div class="mini"><h4>Unsupervised</h4><p>Finds hidden groups or patterns in unlabeled data. <em>"Sort these songs into groups that sound alike."</em></p></div>
+            <div class="mini"><h4>Reinforcement</h4><p>Learns by trial and error with rewards. <em>"Get points for winning the game."</em></p></div>
+          </div>
+          <div class="callout"><span class="callout-title">Garbage in, garbage out</span><p>A model can only be as good as its data. If the training examples are messy, missing, or unfair, the model's predictions will be too.</p></div>
+          <div class="lesson-foot"><button type="button" class="btn btn-primary lesson-done" data-lesson="1">Mark lesson complete · +20 XP</button></div>
+        </article><article class="lesson" id="lesson-3" aria-labelledby="lt-3">
+          <span class="lesson-num">Lesson 3</span>
+          <h2 id="lt-3">Neural networks &amp; language models</h2>
+          <p>A <strong>neural network</strong> is a type of model loosely inspired by the brain. It is made of layers of simple math units called <em>neurons</em>. Each connection has a <strong>weight</strong>, a number that controls how much one neuron influences the next.</p>
+<figure class="figure"><svg viewBox="0 0 520 300" role="img" aria-labelledby="nn-t"><title id="nn-t">A small neural network with an input layer of 3 neurons, a hidden layer of 4, and an output layer of 2, every neuron connected to the next layer</title>
+  <g stroke="#2f3b6b" stroke-width="2"><path d="M90 60L260 40"/><path d="M90 60L260 105"/><path d="M90 60L260 175"/><path d="M90 60L260 240"/><path d="M90 140L260 40"/><path d="M90 140L260 105"/><path d="M90 140L260 175"/><path d="M90 140L260 240"/><path d="M90 220L260 40"/><path d="M90 220L260 105"/><path d="M90 220L260 175"/><path d="M90 220L260 240"/><path d="M260 40L430 100"/><path d="M260 40L430 180"/><path d="M260 105L430 100"/><path d="M260 105L430 180"/><path d="M260 175L430 100"/><path d="M260 175L430 180"/><path d="M260 240L430 100"/><path d="M260 240L430 180"/></g><circle cx="90" cy="60" r="16" fill="#141c38" stroke="#34e1c4" stroke-width="3"/><circle cx="90" cy="140" r="16" fill="#141c38" stroke="#34e1c4" stroke-width="3"/><circle cx="90" cy="220" r="16" fill="#141c38" stroke="#34e1c4" stroke-width="3"/><circle cx="260" cy="40" r="16" fill="#141c38" stroke="#a194ff" stroke-width="3"/><circle cx="260" cy="105" r="16" fill="#141c38" stroke="#a194ff" stroke-width="3"/><circle cx="260" cy="175" r="16" fill="#141c38" stroke="#a194ff" stroke-width="3"/><circle cx="260" cy="240" r="16" fill="#141c38" stroke="#a194ff" stroke-width="3"/><circle cx="430" cy="100" r="16" fill="#141c38" stroke="#ffbd59" stroke-width="3"/><circle cx="430" cy="180" r="16" fill="#141c38" stroke="#ffbd59" stroke-width="3"/>
+  <g font-family="Inter, sans-serif" font-size="13" text-anchor="middle" fill="#a9b4d6"><text x="90" y="285">Input layer</text><text x="260" y="285">Hidden layer</text><text x="430" y="285">Output layer</text></g>
+  <g font-family="Inter, sans-serif" font-size="11" fill="#8591b5"><text x="140" y="30">each line = a weight</text></g></svg>
+  <figcaption>Training nudges the weights (connections) until the outputs match the right answers more often.</figcaption></figure>
+          <p>During training, the network makes a guess, measures how wrong it was, and adjusts its weights a tiny bit to do better. Repeat that millions of times and the network gets good at the task. Networks with many layers are called <strong>deep learning</strong>.</p>
+          <h3>So how does a chatbot "write"?</h3>
+          <p>A <strong>large language model (LLM)</strong> is a huge neural network trained on enormous amounts of text. Its core skill is predicting the next <em>token</em> (a word or piece of a word) based on everything before it. It writes a whole answer by predicting one token, adding it, and predicting again. Developers then fine-tune models with human feedback so they follow instructions and respond more helpfully.</p>
+          <div class="card activity" id="nextword" style="margin:24px 0">
+            <div class="activity-head"><div><span class="lesson-num">Try it</span><h3 style="margin:0">Be the language model</h3></div></div>
+            <p class="muted" style="font-size:.95rem">These are example probabilities for the next word. <strong>Temperature</strong> controls randomness: low = safe and predictable, high = creative and surprising.</p>
+            <p class="nw-sentence" aria-live="polite">The students opened their <mark>___</mark></p>
+            <div class="nw-bars"></div>
+            <div class="field"><label for="nw-temp">Temperature: <span id="nw-temp-val">1.0</span></label><input type="range" id="nw-temp" min="0.2" max="2" step="0.1" value="1"></div>
+            <button type="button" class="btn btn-primary" id="nw-sample">Predict the next word</button>
+          </div>
+          <div class="callout"><span class="callout-title">Prediction is not the same as knowing</span><p>An LLM produces text that <em>sounds</em> likely. It does not automatically check facts, which is why it can be confidently wrong.</p></div>
+          <div class="lesson-foot"><button type="button" class="btn btn-primary lesson-done" data-lesson="2">Mark lesson complete · +20 XP</button></div>
+        </article><article class="lesson" id="lesson-4" aria-labelledby="lt-4">
+          <span class="lesson-num">Lesson 4</span>
+          <h2 id="lt-4">What AI can't do (yet)</h2>
+          <p>AI is powerful, but it has real limits. Knowing them is what separates a smart AI user from someone who just copies and pastes.</p>
+          <div class="grid-2">
+            <div class="mini"><h4>Hallucinations</h4><p>Generative AI can invent facts, quotes, statistics, and even sources that look completely real.</p></div>
+            <div class="mini"><h4>Bias</h4><p>Models learn from human-created data, so they can repeat stereotypes or treat groups unfairly.</p></div>
+            <div class="mini"><h4>Out-of-date knowledge</h4><p>A model only knows what was in its training data, which stops at a cutoff date, unless it is connected to search.</p></div>
+            <div class="mini"><h4>No real-world experience</h4><p>AI has never tasted food, felt nervous before a test, or seen your classroom. It works from patterns in data.</p></div>
+            <div class="mini"><h4>Sensitive to wording</h4><p>Small changes in a question can produce very different answers.</p></div>
+            <div class="mini"><h4>Hidden reasoning</h4><p>Large models are hard to fully explain, even for the people who build them.</p></div>
+          </div>
+          <div class="callout"><span class="callout-title">You're the pilot</span><p>Think of AI as a copilot: helpful, fast, and sometimes wrong. You stay in charge of checking its work and making the final call.</p></div>
+          <div class="lesson-foot"><button type="button" class="btn btn-primary lesson-done" data-lesson="3">Mark lesson complete · +20 XP</button></div>
+        </article>
+        <section class="card activity" id="activity" aria-labelledby="act-title">
+          <div class="activity-head"><div><span class="lesson-num">Activity</span><h2 id="act-title" style="margin:0">Learning-type sorter</h2></div><span class="xp-tag">+50 XP</span></div>
+          <p class="muted">Read each scenario and decide which kind of machine learning it describes. Solve all six to complete the activity.</p>
+          <div id="sorter"></div>
+        </section>
+        <section class="quiz-wrap" id="quiz" aria-labelledby="quiz-title">
+          <span class="lesson-num">Check your understanding</span>
+          <h2 id="quiz-title">Module quiz</h2>
+          <p class="muted">Five questions. Score 4 or more to pass. You earn 10 XP for each correct answer on your best attempt, plus a 25 XP bonus for passing.</p>
+          <form class="quiz" novalidate></form>
+        </section>
+        <div class="card next-module"><div><p class="eyebrow" style="margin:0">Up next</p><h3 style="margin:0">Module 2: Tools &amp; Techniques</h3></div><a class="btn btn-ghost" href="tools.html">Go to Module 2 &rarr;</a></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Synapse: an AI learning portal for grades 9&ndash;12. TSA Webmaster entry, Chapter&nbsp;ID&nbsp;<strong>[0000-0]</strong>, <span id="year">2027</span>.</p>
+      <p>Your progress is saved only in this browser. <a href="references.html">Sources &amp; credits</a></p>
+    </div>
+  </footer>
+  <script src="js/progress.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/module.js"></script>
+</body>
+</html>
